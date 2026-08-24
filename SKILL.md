@@ -32,11 +32,13 @@ different parts need different treatment.
 
 Match the form to the *logical* shape, not the surface appearance:
 
+```text
 ├── **Parallel alternatives with trade-offs** → parallel blocks, each holding its
 │   own benefit, cost and risk, so one branch can be read alone
 ├── **The same measures across several things** → a table
 ├── **A sequence of genuinely simple items** → bullets
 └── **One fact** → one sentence, no scaffolding
+```
 
 Three sentences that look like prose but are three things the reader could accept
 or reject separately are **not** prose. They are a list.
