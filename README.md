@@ -46,7 +46,7 @@ For a first test, invoke `/competent-colleague` in Claude Code, `$competent-coll
 
 All the content below is an excerpt from a Claude Code session using this skill.
 
-It demonstrates the presentation forms the agent shose for the dialog. 
+It demonstrates the presentation forms the agent chose for the dialog.
 
 **This is what Claude wrote:**
 
