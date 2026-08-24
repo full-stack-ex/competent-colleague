@@ -101,7 +101,8 @@ flowchart TD
 ```
 
 ASCII:
-                  
+
+```text           
 
              [Choose]
               /    \
@@ -112,23 +113,28 @@ ASCII:
             |      [Yes]
             |        |
             +---[End]+
+```
 
 ### 3. Gantt-like diagram
 
+```text
 Time       1  2  3  4  5  6  7  8
            ┬──┬──┬──┬──┬──┬──┬──┬
 Process 1  █████████
 Process 2        ████████████
 Process 3                 █████████
+```
 
 ### 4. Horizontal ASCII bar chart
 
+```text
 Item 1 │ ████████████████  16
 Item 2 │ ██████████        10
 Item 3 │ █████████████     13
 Item 4 │ ██████             6
 Item 5 │ █████████████████ 17
        └──────────────────
+```
 
 ### 5. Parallel activities
 
