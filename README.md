@@ -28,15 +28,9 @@ The runtime package contains only `SKILL.md`.
 
 ## Install and try
 
-Installation instructions, paths, and package requirements may change. Always check the current official [Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Claude Code](https://code.claude.com/docs/en/skills), and [ChatGPT/Codex](https://learn.chatgpt.com/docs/build-skills) documentation before installing.
+You can usually take a shortcut: upload SKILL.md to your chat and ask the agent to install or replace the skill. If that doesn't work, follow your product's instructions.
 
-Use [`dist/competent-colleague.zip`](dist/competent-colleague.zip). The archive contains the required top-level `competent-colleague/` directory.
-
-- Claude chat or Desktop: open **Customize > Skills**, choose **Create skill > Upload a skill**, upload the archive, and enable it. Attaching the archive to a conversation may help with inspection, but it is not the documented persistent-install path.
-- Claude Code: extract the archive into `~/.claude/skills/` for personal use or `.claude/skills/` inside a project.
-- ChatGPT desktop and Codex: extract it into `~/.agents/skills/` for personal use or `.agents/skills/` inside a project.
-
-Keep the directory name `competent-colleague`; it must match the frontmatter name. A symlink can let Claude Code and Codex use the same local source directory.
+> Installation instructions, paths, and package requirements may change. Always check the current official [Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Claude Code](https://code.claude.com/docs/en/skills), and [ChatGPT/Codex](https://learn.chatgpt.com/docs/build-skills) documentation before installing.
 
 For a first test, invoke `/competent-colleague` in Claude Code, `$competent-colleague` in Codex, or select the skill with `@` in ChatGPT. Give it a realistic coding task where judgment or communication matters.
 
@@ -73,7 +67,6 @@ It demonstrates the presentation forms the agent chose for the dialog.
 > ⬜ Nine program edits bucket, Budgets, IAM, dbt lineage ×2, Airflow UI, Swagger, GCP
 > 
 > ⬜ 10.C3.5 Spark job count needs ...
-> 
 > 
 > Half the original list closed or evaporated on inspection, which is why the remaining work is smaller than it looked.
 > 
