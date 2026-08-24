@@ -57,14 +57,23 @@ It demonstrates the presentation forms the agent shose for the dialog.
 > ## <span style="color:lightgray">Where the harness  sweep stands</span>
 > 
 > ✅ Resume guard — refuses to resume past a step ...
+> 
 > ✅ verify: reason required on human steps...
+> 
 > ✅ 14.10.3 human → write (the new rule found it: same task ...)
+> 
 > ✅ Jupyter driving — needs no rebuild, ...
+> 
 > ✅ Two dataset downloads — already covered by ...: feature
+> 
 > ✅ 6.6.10 — retired, not a gap: ...
+> 
 > ⬜ Chart verification ← blocked on the decision ...
+> 
 > ⬜ Nine program edits bucket, Budgets, IAM, dbt lineage ×2, Airflow UI, Swagger, GCP
+> 
 > ⬜ 10.C3.5 Spark job count needs ...
+> 
 > 
 > Half the original list closed or evaporated on inspection, which is why the remaining work is smaller than it looked.
 > 
