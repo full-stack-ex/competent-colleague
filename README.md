@@ -36,11 +36,11 @@ For a first test, invoke `/competent-colleague` in Claude Code, `$competent-coll
 
 ---
 
-# === EXAMPLE ===
+# === EXAMPLES ===
 
-All the content below is an excerpt from a Claude Code session using this skill.
+Below are excerpts from Claude Code sessions using this skill.
 
-It demonstrates the presentation forms the agent chose for the dialog.
+They demonstrate the presentation forms the agent chose for the dialog.
 
 **This is what Claude wrote:**
 
@@ -93,6 +93,51 @@ It demonstrates the presentation forms the agent chose for the dialog.
 > 1. **Structural assertions only.** Check traces, point count, axis titles, colour scale, and that the underlying data is non-empty. No dependency, no rebuild, deterministic. Catches empty charts....
 > 
 > 2. **`kaleido 0.2.1` in the image.** One Dockerfile line and a rebuild, and screenshots work for a model to inspect. You accept an unsupported package that plotly may drop at any release ...
+
+   ....
+
+---
+
+   ....
+
+### <span style="color:lightgray">Then: login, and one mechanism does four jobs</span>
+
+The reason to build login now rather than never is that **magic link + browser session is the same machinery you already need** for the account ...
+
+```text
+                        ┌──────────────────────┐
+   registration ────────┤                      │
+   token recovery ──────┤   magic link  +      │──→ browser session (cookie)
+   volunteer invite ────┤   session cookie     │       │
+   device approval ─────┤                      │       ├─→ account & devices page
+                        └──────────────────────┘       ├─→ video portal
+                                                       └─→ tutor UI
+```
+
+Your §5 "manual grants as invites" and §6 "video portal" and ...
+
+### <span style="color:lightgray">The device-link flow</span>
+
+Your AWS SSO reference is the right shape (RFC 8628, device authorization grant ...
+
+```text
+ student's container                        student's browser
+ ───────────────────                        ─────────────────
+ lab.login()
+   POST /device/start
+   ← device_code, user_code "WXYZ-7Q4M"
+   prints link + code  ─────────────────→   opens /link
+                                            logged in? ──no──→ magic link email
+                                                 │yes
+                                            "Approve: Jupyter on DESKTOP-A1?"
+                                                 │  [Approve]
+   poll /device/poll  ←─────────────────────────┘
+   ← refresh credential
+   writes .lab/credentials (gitignored)
+   exchanges for 24h access token, in memory
+```
+
+**One improvement over the AWS UX, specific to your notebooks:** in Jupyter, `lab.login()` renders ...
 
    ....
 
