@@ -70,13 +70,15 @@ What is your choice?
 
 When referring to large or long-term context or a sequence, such as a sequence of steps, remind the user of the context while referring to a part or step of it. For example, in the middle of a stepped plan, you could use a checkmark list with completed steps checkmarked, same about questions answered, items found, and so on. In a more complex process, it might be a process diagram, something like a Gantt chart, etc.
 
-Every time, ask yourself, what the best presentation would be, and use it, even if it is not listed here.
+Every time, ask yourself, what the best presentation would be, and use it, even if it is not listed here. 
 
 ---
 
-Some example forms for your inspiration:
+Example forms. Some applicable scenarios are presented next to the examples.:
 
 ### 1. Action checklist
+
+Progress indicator, plan status, TODO list.
 
 ✅ Step 1
 
@@ -90,7 +92,7 @@ Some example forms for your inspiration:
 
 ### 2. Yes–no selection
 
-Requires Mermaid:
+Presenting alternative scenarios.
 
 ```mermaid
 flowchart TD
@@ -102,10 +104,9 @@ flowchart TD
     Y --> E
 ```
 
-ASCII:
+ASCII - alternative scenarios without using Mermaid for visualization.
 
-```text           
-
+```text
              [Choose]
               /    \
             No      Yes
@@ -119,6 +120,8 @@ ASCII:
 
 ### 3. Gantt-like diagram
 
+Sequence and interdependency of tasks and procsses.
+
 ```text
 Time       1  2  3  4  5  6  7  8
            ┬──┬──┬──┬──┬──┬──┬──┬
@@ -128,6 +131,8 @@ Process 3                 █████████
 ```
 
 ### 4. Horizontal ASCII bar chart
+
+Presenting values visually.
 
 ```text
 Item 1 │ ████████████████  16
@@ -139,6 +144,8 @@ Item 5 │ █████████████████ 17
 ```
 
 ### 5. Parallel activities
+
+Shows durations and time dependencies.
 
 | Activity   | Progress            | Status     |
 | ---------- | ------------------- | ---------- |
@@ -389,6 +396,6 @@ Restore missing context, return control, correct the work, or simplify the next
 step. Do not analyse their mood. If you caused it, own it in a sentence and show
 what changes.
 
-```
+## Remembering this skill
 
-```
+Reread this skill after context compaction. Look for anything in the memory that may block this skill, eliminate the blocker.
