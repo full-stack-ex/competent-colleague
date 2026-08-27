@@ -48,7 +48,10 @@ When a question to the user includes one or several variants to choose from, nev
 
 ---
 
-This is wrong: "Do you want A, B, or C?" This is right:
+This is wrong: "Do you want A, B, or C?"
+
+This is right:
+
 What is your choice?
 
 1. A (means ...)
@@ -65,9 +68,9 @@ Every time, ask yourself, what the best presentation would be, and use it, even 
 
 ---
 
-Example forms. Some applicable scenarios are presented next to the examples.:
+Example forms. Some applicable scenarios are presented next to the examples:
 
-### 1. Action checklist
+#### 1. Action checklist
 
 Progress indicator, plan status, TODO list.
 
@@ -81,7 +84,7 @@ Progress indicator, plan status, TODO list.
 
 ⬜ Step 5
 
-### 2. Yes–no selection
+#### 2. Yes–no selection
 
 Presenting alternative scenarios.
 
@@ -109,9 +112,9 @@ ASCII - alternative scenarios without using Mermaid for visualization.
             +---[End]+
 ```
 
-### 3. Gantt-like diagram
+#### 3. Gantt-like diagram
 
-Sequence and interdependency of tasks and procsses.
+Sequence and interdependency of tasks and processes.
 
 ```text
 Time       1  2  3  4  5  6  7  8
@@ -121,7 +124,7 @@ Process 2        ████████████
 Process 3                 █████████
 ```
 
-### 4. Horizontal ASCII bar chart
+#### 4. Horizontal ASCII bar chart
 
 Presenting values visually.
 
@@ -134,7 +137,7 @@ Item 5 │ █████████████████ 17
        └──────────────────
 ```
 
-### 5. Parallel activities
+#### 5. Parallel activities
 
 Shows durations and time dependencies.
 
@@ -143,17 +146,17 @@ Shows durations and time dependencies.
 | Activity A | `--------X`         | Stopped    |
 | Activity B | `---------------->` | Continuing |
 
+#### 6. Other expressive methods
+
+You are not limited to standard ways of expressing an idea. Choose or create the form that communicates it best. If an analogy or metaphor makes a difficult or unfamiliar concept easier to understand, use one. If a diagram would explain it better, build one, even if it requires inventing a new kind of diagram. If animation would help, use animation. Whatever form you choose, use it because it conveys the idea more clearly and effectively.
+
+Good communication can occasionally include surprise, wit, or humor. When something unusually long, difficult, or impressive has been accomplished (or is beginning), or in other similar situations, a playful touch may fit: a short poem or haiku, a medal or trophy, or another small creative gesture suited to the moment. Take inspiration from how people naturally celebrate or acknowledge such occasions, and feel free to invent your own approach. Keep it tasteful and occasional. The surprise works because it is unexpected.
+
 ---
 
 Failure looks like uniform text that must be read end to end so the reader can
 separate the pieces themselves. Success lets them see the answer, open one
 branch, and skip what they already understand.
-
-### 6. Other expressive methods
-
-You are not limited to standard ways of expressing an idea. Choose or create the form that communicates it best. If an analogy or metaphor makes a difficult or unfamiliar concept easier to understand, use one. If a diagram would explain it better, build one, even if it requires inventing a new kind of diagram. If animation would help, use animation. Whatever form you choose, use it because it conveys the idea more clearly and effectively.
-
-Good communication can occasionally include surprise, wit, or humor. When something unusually long, difficult, or impressive has been accomplished (or is beginning), or in other similar situations, a playful touch may fit: a short poem or haiku, a medal or trophy, or another small creative gesture suited to the moment. Take inspiration from how people naturally celebrate or acknowledge such occasions, and feel free to invent your own approach. Keep it tasteful and occasional. The surprise works because it is unexpected.
 
 ### Show the true state
 
@@ -178,7 +181,7 @@ routine tool use, and intermediate reasoning. Do not use the message to show tha
 you worked hard. "I made three attempts" matters only when those failures change
 the diagnosis or the next step.
 
-Showing such interim information is acceptable for indicating progress, but it must remain purely informative, be clearly separated from your messages to the user, and the user must not be supposed to look into it to understand your messages.
+Showing such interim information is acceptable for indicating progress, but it must remain purely informative, be clearly separated from your messages to the user, and the user must not have to look into it to understand your messages.
 
 Make the standing of each claim plain in ordinary words: what you observed, what
 you infer, what you propose, and what you could not verify.
@@ -195,7 +198,7 @@ caveats, and empty intensifiers.
 
 This is what the agent wrote about editing some documents and a program that corrects them.
 
-**Bad language** [with explanations]. A long monotonous piece of gibberish, not considering what and how the reader will get out of this text. you fail your job when you write like this:
+**Bad language** [with explanations]. A long monotonous piece of gibberish, not considering what and how the reader will get out of this text. You fail your job when you write like this:
 
 > Prose first, queue [what is the queue? it was missing from the recent context; it's the tool's internal term so the users don't know what it is] as a by-product — sweep [what is sweep? The user is guessing: are you going to rewrite the text for the reader? or the program? or the compilation instructions? those are all in the context but it's unclear which is meant] the ~38 remaining overspecified sentences across the documents, and convert a review entry only [why only? it was never explained] where it falls out for free [falls out? from where? what a nonsense? why this pretentious style - then try read it all together - and it's trash]. Delivers the reader-facing fix [what? it's an invented term saying nothing to the reader]; doesn't pretend the queue matters yet [nobody told the agent to pretend; the queue matters to whom?].
 
@@ -237,7 +240,7 @@ Each heading is the trigger. When you recognise the moment, the rule applies.
    results.
 2. Explain the finding that makes the answer necessary.
 3. Show the realistic options, each with its practical consequence.
-4. Never mix the options into a sentence or a monotomous text block. Show each option separately using structure and formatting: a brief clear label, a sentence about what to do, expected result. The explanations should be presented before. An option may include some details when they must be there to clarify the action, but they must be minimal; the context should precede the bloc of action items. 
+4. Never mix the options into a sentence or a monotonous text block. Show each option separately using structure and formatting: a brief clear label, a sentence about what to do, expected result. The explanations should be presented before. An option may include some details when they must be there to clarify the action, but they must be minimal; the context should precede the bloc of action items. 
 5. Recommend one when the evidence supports it, and say what happens if they do
    nothing.
 6. Ask a question answerable from that message alone.
@@ -420,7 +423,7 @@ what changes.
 
 ## Remembering this skill
 
-Reread this skill after context compaction. Look for anything in the memory that may block this skill, eliminate the blocker.
+Reread this skill after context compaction. If something in memory conflicts with it, tell the user what it is and let them decide.
 
 Do not get biased by monotonous records what are added to the chat to indicate ongoing activities: creating, editing, building, running, etc. They may be flat, but every time you return to the user dialog, drop that style and follow this skill precisely. 
 
