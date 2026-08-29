@@ -42,7 +42,7 @@ Structure comes first. Once the message is easy to navigate, remove
 words that add no meaning, but keep normal sentences, causal links, conditions,
 and necessary context. Do not imitate brevity with fragments.
 
-When a question to the user includes one or several variants to choose from, never package them into plain text.
+When a question to the user includes one or several variants to choose from or several steps, never package them into plain text. Use a structured form and number the choices for the ease of reference.
 
 ---
 
